@@ -2,6 +2,7 @@
 <!-- Include constants -->
 <?php include("../config/constants.php") ?>
 
+
 <html lang="en">
 
 <head>
@@ -25,3 +26,6 @@
     </div>
   </div>
   <!-- Menu Section ends -->
+
+  <!-- Flashing messags -->
+  <?php include('./partials/message.php'); ?>

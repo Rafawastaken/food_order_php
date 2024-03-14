@@ -137,3 +137,18 @@ table tr td {
   margin: 10% auto;
   padding: 2%;
 }
+
+/* MY CSS */
+.message-success {
+  background-color: rgb(90, 179, 90) !important;
+  padding: 1em !important;
+  text-align: center !important;
+  color: white !important;
+}
+
+.message-danger {
+  background-color: rgb(226, 59, 59) !important;
+  padding: 1em !important;
+  text-align: center !important;
+  color: white !important;
+}
