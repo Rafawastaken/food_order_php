@@ -54,10 +54,13 @@
               <td><?php echo $full_name ?></td>
               <td><?php echo $username ?></td>
               <td>
-                <a href="#" class="btn-secondary">
+                <a href="<?php echo SITEURL; ?>admin/update-password.php?id=<?php echo $id; ?>" class="btn-primary">
+                  Change Pass
+                </a>
+                <a href="<?php echo SITEURL; ?>admin/update-admin.php?id=<?php echo $id; ?>" class="btn-secondary ms-2">
                   Update Admin
                 </a>
-                <a href="<?php echo SITEURL ?>/admin/delete-admin.php?id=<?php echo $id ?>&username=<?php echo $username ?>" class="btn-danger ms-2">
+                <a href="<?php echo SITEURL ?>admin/delete-admin.php?id=<?php echo $id ?>&username=<?php echo $username ?>" class="btn-danger ms-2">
                   Delete Admin
                 </a>
               </td>

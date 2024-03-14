@@ -56,7 +56,8 @@ if (isset($_POST['submit'])) {
   $password = $_POST['password']; // Do not hash here, do it just before inserting into database
 
   // Hash the password using bcrypt
-  $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+  // $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+  $hashed_password = md5($password);
 
   // SQL Query to insert data into database using prepared statements
   $sql = "INSERT INTO tbl_admin (full_name, username, password) VALUES (?, ?, ?)";
