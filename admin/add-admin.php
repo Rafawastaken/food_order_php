@@ -9,7 +9,7 @@
     <br />
 
     <!-- Formulário para adicionar um novo administrador -->
-    <form action="#" method="POST">
+    <form method="POST">
       <table class="tbl-30">
         <tr>
           <td>Full Name:</td>

@@ -12,7 +12,7 @@
 
 <body>
   <?php
-  include('../common/message.php');
+  include("../common/message.php")
   ?>
 
   <div class="login">
