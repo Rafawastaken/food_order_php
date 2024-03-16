@@ -34,6 +34,7 @@
           <!-- Table Heading -->
           <tr>
             <th>S.N</th>
+            <th>Image</th>
             <th>Title</th>
             <th>Active</th>
             <th>Featured</th>
@@ -47,6 +48,7 @@
         $title = $rows['title'];
         $active = $rows['active'];
         $featured = $rows['featured'];
+        $image_name = $rows['image_name'];
         $sn = $sn + 1;
 
         ?>
@@ -55,6 +57,12 @@
             <td>
               <?php echo $sn ?>
             </td>
+
+            <td>
+              <img src="<?php echo SITEURL ?>/images/category/<?php echo $image_name ?>" alt="<?php echo $title ?> image" height="75" width="75">
+
+            </td>
+
             <td>
               <?php echo $title ?>
             </td>
