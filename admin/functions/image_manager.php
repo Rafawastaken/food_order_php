@@ -4,7 +4,7 @@
 function upload_image($image_name, $source_path, $upload_path, $error_redirect)
 {
   $image_extenstion = pathinfo($image_name, PATHINFO_EXTENSION);
-  $final_image_name = "category_image" . uniqid() . "." . $image_extenstion;
+  $final_image_name = uniqid() . "." . $image_extenstion;
   $upload_path = $upload_path . $final_image_name;
   $upload = move_uploaded_file($source_path, $upload_path);
 
