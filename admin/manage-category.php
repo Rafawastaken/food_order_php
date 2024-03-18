@@ -50,6 +50,8 @@
         $featured = $rows['featured'];
         $image_name = $rows['image_name'];
         $sn = $sn + 1;
+        $delete_link = SITEURL . "admin/delete-category.php?id=" . $id . "&image-name=" . $image_name;
+        $update_link = SITEURL . "admin/update-category.php?id=" . $id;
 
         ?>
 
@@ -59,7 +61,13 @@
             </td>
 
             <td>
-              <img src="<?php echo SITEURL ?>/images/category/<?php echo $image_name ?>" alt="<?php echo $title ?> image" height="75" width="75">
+              <?php if (!empty($image_name)) {
+              ?>
+                <img src="<?php echo SITEURL ?>/images/category/<?php echo $image_name ?>" alt="<?php echo $title ?> image" height="75" width="75">
+              <?php
+              } else {
+                echo "No image";
+              } ?>
 
             </td>
 
@@ -74,10 +82,10 @@
             </td>
 
             <td>
-              <a href="#" class="btn-primary">
+              <a href="<?php echo $update_link ?>" class="btn-primary">
                 Update Category
               </a>
-              <a href="#" class="btn-danger ms-2">
+              <a href="<?php echo $delete_link ?>" class="btn-danger ms-2">
                 Delete Category
               </a>
             </td>
