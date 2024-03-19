@@ -113,7 +113,6 @@ if (isset($_POST['submit'])) {
   $featured = $_POST['featured'];
   $active = $_POST['active'];
 
-  echo $current_image;
 
   // Update new image if selected
   // Check if image is selected or not

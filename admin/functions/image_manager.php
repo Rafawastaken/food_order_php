@@ -34,7 +34,6 @@ function delete_image($remove_path, $error_redirect)
     header("location:" . $error_redirect);
     die();
   }
-
   return $remove;
 }
 

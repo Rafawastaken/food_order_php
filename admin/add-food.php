@@ -104,7 +104,7 @@ if (isset($_POST['submit'])) {
   }
 
   // Check if image was selected and upload it
-  if (isset($_FILES['image']['name'])) {
+  if (isset($_FILES['image']['name']) and !empty($_FILES['image']['name'])) {
     $image_name = $_FILES['image']['name'];
     $source_path = $_FILES['image']['tmp_name'];
     $upload_path = "../images/food/";
