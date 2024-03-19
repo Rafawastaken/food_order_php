@@ -170,7 +170,6 @@ if (isset($_POST['submit'])) {
         $image_name = upload_image($image_name, $source_path, $upload_path, $error_redirect_path);
       } else {
         $remove_path = "../images/food/" . $current_image;
-        echo $remove_path;
         $image_name = update_image($image_name, $source_path, $error_redirect_path, $upload_path, $remove_path);
       }
     } else {
