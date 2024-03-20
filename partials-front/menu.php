@@ -1,5 +1,5 @@
 <?php include("./config/constants.php") ?>
-<?php include("./common/message.php") ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -44,3 +44,5 @@
       <div class="clearfix"></div>
     </div>
   </section>
+
+  <?php include("./common/message.php") ?>

@@ -5,6 +5,21 @@
 */
 
 /* CSS for All */
+/* MY CSS */
+.message-success {
+  background-color: rgb(90, 179, 90) !important;
+  padding: 1em !important;
+  text-align: center !important;
+  color: white !important;
+}
+
+.message-danger {
+  background-color: rgb(226, 59, 59) !important;
+  padding: 1em !important;
+  text-align: center !important;
+  color: white !important;
+}
+
 * {
   margin: 0 0;
   padding: 0 0;
