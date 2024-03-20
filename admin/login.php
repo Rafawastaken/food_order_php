@@ -49,8 +49,8 @@ if (isset($_SESSION['destroy']) && $_SESSION['destroy'] == true) {
 }
 
 if (isset($_POST['submit'])) {
-  $username = $_POST['username'];
-  $password = $_POST['password'];
+  $username = mysqli_real_escape_string($conn, $_POST['username']);
+  $password = mysqli_real_escape_string($conn, $_POST['password']);
   $hash_password = md5($password);
 
   $sql = "SELECT * FROM tbl_admin WHERE username='$username' and password='$hash_password'";
